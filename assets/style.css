@@ -1,0 +1,96 @@
+/* ================ 4D gen ================ */
+/* Hide sidebar */
+[data-testid="stSidebar"] {
+    display: none;
+}
+
+/* ================= HEADER ================= */
+.header-card {
+    background: linear-gradient(135deg, #5b6278, #464e5f, #6a5f95);
+    padding: 15px 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+    margin-bottom: 20px;
+}
+
+.header-card h1 {
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    font-size: 1.8em;
+    line-height: 1.2;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.header-card p {
+    color: #d1d5db;
+    margin: 3px 0 0 0;
+    font-size: 0.95em;
+}
+
+/* ================= TABLE WRAPPER ================= */
+.responsive-table {
+    overflow-x: auto;
+    width: 100%;
+}
+
+/* TABLE BASE */
+.responsive-table table {
+    display: inline-block;
+    table-layout: auto !important;
+    border-collapse: collapse;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+/* CELLS */
+.responsive-table th,
+.responsive-table td {
+    padding: 6px 8px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* HEADER */
+.responsive-table th {
+    background-color: #464e5f;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+/* ==== Set History 4D Table + Winning Cal Table ==== */
+/* Index Column */
+.responsive-table td:first-child,
+.responsive-table th:first-child {
+    background-color: #464e5f;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+/* 2nd Column */
+.responsive-table td:nth-child(2),
+.responsive-table th:nth-child(2) {
+    position: sticky;
+    left: 0;
+    z-index: 10;
+    background-color: #464e5f;
+    color: white;
+    font-weight: bold;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.15);
+}
+
+/* Even Row Column BG Coloring */
+.responsive-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* ================= TEXT ALIGN ================= */
+.dataframe thead th,
+.dataframe tbody td,
+.dataframe tbody td a {
+    text-align: center;
+}
