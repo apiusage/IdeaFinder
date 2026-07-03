@@ -32,7 +32,7 @@ choice = option_menu(
     options=list(MENU.keys()),
     icons=[item["icon"] for item in MENU.values()],
     orientation="horizontal",
-    menu_icon="dice-4-fill",
+    menu_icon="cpu",
     default_index=0,
     styles={
         "nav-link": {"font-size": "12px"},

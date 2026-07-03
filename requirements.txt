@@ -3,3 +3,6 @@ pandas
 plotly
 sqlmodel
 streamlit-option-menu
+playwright
+requests
+beautifulsoup4
